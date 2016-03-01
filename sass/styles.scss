@@ -1,0 +1,36 @@
+/* cv codeschool
+ *
+ * /sass/styles.scss - Main stylesheet
+ * by Lugash!
+ * created at 23/02/2016
+ */
+
+// Settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/size";
+
+// Tools
+// --- nothing here (yet)
+
+// Generic
+@import "generic/reset";
+
+// Base
+@import "base/elements";
+
+// Objects
+@import "objects/structure";
+
+// Components
+@import "components/header";
+@import "components/video";
+@import "components/me";
+@import "components/learning";
+@import "components/work";
+@import "components/language";
+
+@import "components/footer";
+
+// Trumps
+// --- nothing here (yet)

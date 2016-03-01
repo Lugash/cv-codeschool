@@ -1,0 +1,71 @@
+ /* cv codeschool
+  *
+  * /sass/components/_video.scss - Identity section specific styles
+  * by leny@flatLand!
+  * by Lugash!
+  * created at 23/02/2016
+  */
+
+ section.video {
+     position: relative;
+     padding-bottom: 35%;
+     // BLUE FILTER
+    //  &::before {
+    //      position: absolute;
+    //      bottom: 0;
+    //      left: 0;
+    //      right: 0;
+    //      top: 0;
+    //      display: block;
+    //      background: linear-gradient(to bottom,rgba($buttonLinkColor, 0.4) ,rgba($gradientColor, 0.4));
+    //      z-index: 10;
+    //      content: "";
+    //  }
+     img {
+         bottom: 0;
+         left: 0;
+         position: absolute;
+         right: 0;
+         top: 0;
+         height: auto;
+         z-index: 5;
+         opacity: 0.8;
+     }
+     h2, h3, a {
+
+         font-weight: normal;
+         font-size: 2.5em;
+         position: relative;
+         text-align: center;
+         z-index: 15;
+         margin-top: 0.5em;
+         padding: 1em;
+         color: $backgroundColor;
+         text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+     }
+     h3 {
+         font-size: 1.8em;
+         padding: 0;
+         margin-top: 0;
+         margin-bottom: 1em;
+     }
+     a {
+        display: block;
+        width: 15em;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 0.8em 2.6em;
+        background-color: $linkColor2;
+        border: 1px solid $linkColor2Hover;
+        border-radius: 100px;
+        -webkit-transition: 0.2s ease-in-out;
+        &:hover {
+            background-color: $linkColor2Hover;
+        }
+     }
+     p {
+         padding: 0 2rem;
+         font-size: 1.4rem;
+     }
+ }

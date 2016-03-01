@@ -1,0 +1,64 @@
+/* cv codeschool
+ *
+ * /sass/components/_language.scss - Language section specific styles
+ *
+ * by Lugash!
+ * created at 23/02/2016
+ */
+
+section.language {
+    margin: 0 auto;
+
+    article {
+        margin: 2rem auto 0;
+        margin-left: -3px;
+        padding-top: 10em;
+        padding-bottom: 8em;
+        text-align: center;
+        width: 25%;
+        display: inline-block;
+        &.french, &.english {
+            // background-color: $gradientColor2;
+            background: linear-gradient(to bottom,$gradientColor2, darken($gradientColor2, 20));
+        }
+        &.italian, &.dutch {
+            background: linear-gradient(to bottom,$gradientColor1, darken($gradientColor1, 15));
+        }
+        h1 {
+            margin: 0 auto 4rem;
+            font: lighter 4rem $textFont;
+            color: $backgroundColor;
+        }
+    }
+    a {
+       color: $backgroundColor;
+       display: block;
+       text-align: center;
+       width: 70%;
+       font-size: 1.5em;
+       font-weight: bold;
+       margin: 0 auto;
+       padding: 0.8em 1.5em;
+       background-color: $linkColor2;
+       border: 1px solid $linkColor2Hover;
+       border-radius: 100px;
+       -webkit-transition: 0.2s ease-in-out;
+       &:hover {
+           background-color: $linkColor2Hover;
+       }
+     }
+     article:nth-child(2n+1) {
+        a{
+            background-color: rgba(0,0,0,0);
+            border: 1px solid $backgroundColor;
+            border-radius: 100px;
+            -webkit-transition: 0.2s ease-in-out;
+            &:hover {
+                background-color: $buttonLinkHoverColor;
+            }
+         }
+     }
+     span {
+         font-size: 1.5rem;
+     }
+}

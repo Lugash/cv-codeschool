@@ -1,0 +1,46 @@
+ /* cv codeschool
+  *
+  * /sass/components/_learning.scss - Learning section specific styles
+  *
+  * by Lugash!
+  * created at 23/02/2016
+  */
+
+section.learning {
+    background-color: $backgroundColor2;
+    padding: 2em;
+    font-size: 1.3rem;
+    article {
+        float: left;
+        margin: 3em;
+        width: 30%;
+        height: 10em;
+        
+    }
+    h1 {
+        margin: 0 auto 2rem;
+        font: normal 2rem $textFont;
+        color: $textColor;
+    }
+    a {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 3;
+        padding: 0 2.5em;
+        color: $backgroundColor;
+        background-color: $buttonLinkColor;
+        border: 1px solid $buttonLinkHoverColor;
+        border-radius: 100px;
+        font-family: $textFont;
+        font-weight: 600;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            background-color: $buttonLinkHoverColor;
+        }
+    }
+    span {
+        font-size: 1.5rem;
+    }
+}

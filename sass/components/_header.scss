@@ -1,0 +1,39 @@
+ /* cv codeschool
+  *
+  * /sass/components/_header.scss - Header specific styles
+  * by Lugash!
+  * created at 23/02/2016
+  */
+
+header {
+
+    img{
+        width: 150px;
+        padding-left: 10%;
+    }
+    // min-width: 780px;
+    position: relative;
+    background: $backgroundColor;
+    a {
+        font: normal 1.7rem $headerFont;
+        color: $headerColor;
+        display: inline-block;
+        margin: 0 0.6em;
+        position: relative;
+        &.logo::before {
+            position: absolute;
+            left: -15px;
+            top: 5px;
+            content: url(../img/fav.ico);
+        }
+    }
+    nav ul li{
+        display: inline-block;
+        &:nth-child(4){
+            margin-right: 10em;
+        }
+    }
+    .right {
+        // float: right;
+    }
+}

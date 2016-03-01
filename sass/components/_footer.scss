@@ -1,0 +1,50 @@
+/* sass-intro
+ *
+ * /sass/components/_footer.scss - Footer specific styles
+ * by leny@flatLand!
+ * created at 04/02/2016
+ */
+
+footer {
+    background-color: $footerColor;
+    color: darken($footerTextColor, 20);
+    padding: 0 5em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    h2 {
+        display: none;
+    }
+    ul {
+        list-style: none;
+        padding: 4rem 0;
+
+        font-size: 0;
+        display: inline-block;
+        li {
+            width: 25%;
+            font-size: 1.4rem;
+            margin: 1em;
+            &:first-child {
+                text-decoration: underline;
+            }
+        }
+        &+ul {
+            border-right: 1px solid darken($footerTextColor, 20);
+        }
+    }
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    >a {
+        padding: 3em;
+        margin-left: 1em;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: url(../img/fav.ico);
+        }
+    }
+}
