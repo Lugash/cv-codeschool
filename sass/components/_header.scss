@@ -6,14 +6,13 @@
   */
 
 header {
-
+    // min-width: 780px;
+    position: relative;
+    background: $backgroundColor;
     img{
         width: 150px;
         padding-left: 10%;
     }
-    // min-width: 780px;
-    position: relative;
-    background: $backgroundColor;
     a {
         font: normal 1.7rem $headerFont;
         color: $headerColor;
@@ -27,6 +26,23 @@ header {
             content: url(../img/fav.ico);
         }
     }
+    #account {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2;
+        padding: 0 2em;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid $green;
+        border-radius: 100px;
+        -webkit-transition: 0.2s ease-in-out;
+        &:hover {
+            background-color: $green;
+            color: $backgroundColor;
+        }
+    }
     nav ul li{
         display: inline-block;
         &:nth-child(4){
@@ -35,5 +51,11 @@ header {
     }
     .right {
         // float: right;
+    }
+    input {
+        font: $textFont;
+        padding: 0.5em;
+        border-radius: 40px;
+
     }
 }

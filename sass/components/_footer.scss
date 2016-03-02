@@ -8,6 +8,7 @@
 footer {
     background-color: $footerColor;
     color: darken($footerTextColor, 20);
+
     padding: 0 5em;
     padding-top: 1.5em;
     padding-bottom: 1em;
@@ -15,10 +16,9 @@ footer {
         display: none;
     }
     ul {
+
         list-style: none;
         padding: 4rem 0;
-
-        font-size: 0;
         display: inline-block;
         li {
             width: 25%;
@@ -45,6 +45,13 @@ footer {
             left: 0;
             top: 0;
             content: url(../img/fav.ico);
+        }
+
+    }
+    a {
+        color: darken($footerTextColor, 20);
+        &:hover {
+            color: $backgroundColor;
         }
     }
 }

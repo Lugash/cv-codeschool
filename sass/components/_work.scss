@@ -7,37 +7,86 @@
  */
 
 section.work {
-    clear:  left;
-    background-color: $backgroundColor2;
+    background-color: $backgroundColor;
+    font-size: 1.6rem;
+    position: relative;
+    clear: both;
+    >h2 {
+        text-align: center;
+        padding:  2em;
+        font-weight: lighter;
+    }
+    article {
+        position: relative;
+        float: left;
+        padding: 2em;
+        width: 50%;
+        clear: both;
+        &:nth-child(2n) {
+            float: left;
+            padding-right: 2em;
+            border-right: 1px solid $textColor;
+            margin-left: 1px;
+            // regler le pixel erreur
+            &::before {
+                position: absolute;
+                top: 20px;
+                right: -45px;
+                content: url('../img/1.svg');
+                border: 5px solid white;
+                border-radius: 100%;
+
+                transform: scale(0.4);
+                -webkit-transform: scale(0.4);
+            }
+        }
+        &:nth-child(2n+1) {
+            float: right;
+            text-align: right;
+            padding-left: 2em;
+            border-left: 1px solid $textColor;
+            &::before {
+                position: absolute;
+                top: 20px;
+                left: -45px;
+                content: url('../img/1.svg');
+                border: 5px solid white;
+                border-radius: 100%;
+
+                transform: scale(0.4);
+                -webkit-transform: scale(0.4);
+            }
+        }
+        &:last-child {
+            margin-bottom: 1em;
+        }
+    }
     h1 {
         margin: 0 auto 2rem;
         font: normal 2rem $headerFont;
         color: $textColor;
     }
-    a {
-        cursor: pointer;
-        display: inline-block;
-        text-align: center;
-        white-space: nowrap;
-        font-size: 0.8rem;
-        line-height: 3;
-        padding: 0 2.5em;
-        color: $backgroundColor;
-        background-color: $buttonLinkColor;
-        border: 1px solid $buttonLinkHoverColor;
-        border-radius: 100px;
-        font-family: $textFont;
-        font-weight: 600;
-        transition: 0.2s ease-in-out;
-        &:hover {
-            background-color: $buttonLinkHoverColor;
-        }
-    }
-    span {
+    p {
         font-size: 1.5rem;
+        font-weight: lighter;
     }
-    article {
-        display: block;
-        float: left;
+    a {
+       clear: both;
+       color: $buttonLinkColor;
+       display: block;
+       text-align: center;
+       width: 15%;
+       font-size: 1.3rem;
+       font-weight: bold;
+       margin: 0 auto 5em;;
+       padding: 0.8em 1.5em;
+       background-color: rgba(0,0,0,0);
+       border: 1px solid $buttonLinkHoverColor;
+       border-radius: 100px;
+       -webkit-transition: 0.2s ease-in-out;
+       &:hover {
+           background-color: $buttonLinkHoverColor;
+           color: $backgroundColor;
+       }
     }
 }

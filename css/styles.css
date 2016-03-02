@@ -116,10 +116,29 @@ header {
       left: -15px;
       top: 5px;
       content: url(../img/fav.ico); }
+  header #account {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2;
+    padding: 0 2em;
+    background-color: transparent;
+    border: 1px solid #388745;
+    border-radius: 100px;
+    -webkit-transition: 0.2s ease-in-out; }
+    header #account:hover {
+      background-color: #388745;
+      color: #FFFFFF; }
   header nav ul li {
     display: inline-block; }
     header nav ul li:nth-child(4) {
       margin-right: 10em; }
+  header input {
+    font: "Open sans", Helvetica, Arial, sans-serif;
+    padding: 0.5em;
+    border-radius: 40px; }
 
 /* cv codeschool
   *
@@ -130,19 +149,19 @@ header {
   */
 section.video {
   position: relative;
-  padding-bottom: 35%; }
+  padding-bottom: 27%; }
   section.video img {
+    position: absolute;
     bottom: 0;
     left: 0;
-    position: absolute;
     right: 0;
     top: 0;
     height: auto;
     z-index: 5;
     opacity: 0.8; }
   section.video h2, section.video h3, section.video a {
-    font-weight: normal;
-    font-size: 2.5em;
+    font-weight: lighter;
+    font-size: 4em;
     position: relative;
     text-align: center;
     z-index: 15;
@@ -196,8 +215,8 @@ section.me {
     width: 25%;
     height: auto;
     border: 10px solid white;
-    border-radius: 3%;
-    box-shadow: 1px 1px 5px; }
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
   section.me p {
     padding: 0 2rem;
     font-size: 1.5rem;
@@ -213,21 +232,49 @@ section.me {
 section.learning {
   background-color: #F6F8F8;
   padding: 2em;
-  font-size: 1.3rem; }
+  font-size: 1.5rem;
+  position: relative;
+  float: left;
+  clear: both; }
   section.learning article {
+    position: relative;
+    background-color: #FFFFFF;
     float: left;
-    margin: 3em;
-    width: 30%;
-    height: 10em; }
+    margin: 2em 3%;
+    padding: 2em;
+    text-align: center;
+    width: 300px;
+    height: 20em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; }
+    section.learning article > p {
+      transform: translateY(-70px);
+      -webkit-transform: translateY(-70px); }
   section.learning h1 {
     margin: 0 auto 2rem;
     font: normal 2rem "Open sans", Helvetica, Arial, sans-serif;
-    color: #575a5b; }
+    color: #21abc7;
+    transform: translateY(-70px);
+    -webkit-transform: translateY(-70px); }
+  section.learning > h2 {
+    text-align: center;
+    margin: 1em;
+    font-weight: lighter; }
+  section.learning > p {
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 4em; }
   section.learning a {
+    position: absolute;
+    bottom: 5em;
+    left: 35%;
     cursor: pointer;
     display: inline-block;
     text-align: center;
-    font-size: 0.8rem;
+    margin-top: 1em;
+    font-size: 1.2rem;
     line-height: 3;
     padding: 0 2.5em;
     color: #FFFFFF;
@@ -239,8 +286,20 @@ section.learning {
     transition: 0.2s ease-in-out; }
     section.learning a:hover {
       background-color: #1C91A8; }
-  section.learning span {
-    font-size: 1.5rem; }
+  section.learning span.new {
+    color: #1C91A8;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 2em;
+    left: 45%; }
+  section.learning img {
+    height: 40%;
+    width: auto;
+    border: 5px solid white;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-70px);
+    -webkit-transform: translateY(-70px); }
 
 /* cv codeschool
  *
@@ -250,34 +309,117 @@ section.learning {
  * created at 23/02/2016
  */
 section.work {
-  clear: left;
-  background-color: #F6F8F8; }
+  background-color: #FFFFFF;
+  font-size: 1.6rem;
+  position: relative;
+  clear: both; }
+  section.work > h2 {
+    text-align: center;
+    padding: 2em;
+    font-weight: lighter; }
+  section.work article {
+    position: relative;
+    float: left;
+    padding: 2em;
+    width: 50%;
+    clear: both; }
+    section.work article:nth-child(2n) {
+      float: left;
+      padding-right: 2em;
+      border-right: 1px solid #575a5b;
+      margin-left: 1px; }
+      section.work article:nth-child(2n)::before {
+        position: absolute;
+        top: 20px;
+        right: -45px;
+        content: url("../img/1.svg");
+        border: 5px solid white;
+        border-radius: 100%;
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4); }
+    section.work article:nth-child(2n+1) {
+      float: right;
+      text-align: right;
+      padding-left: 2em;
+      border-left: 1px solid #575a5b; }
+      section.work article:nth-child(2n+1)::before {
+        position: absolute;
+        top: 20px;
+        left: -45px;
+        content: url("../img/1.svg");
+        border: 5px solid white;
+        border-radius: 100%;
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4); }
+    section.work article:last-child {
+      margin-bottom: 1em; }
   section.work h1 {
     margin: 0 auto 2rem;
     font: normal 2rem "Trebuchet MS", "Open sans", Helvetica, Arial, sans-serif;
     color: #575a5b; }
+  section.work p {
+    font-size: 1.5rem;
+    font-weight: lighter; }
   section.work a {
-    cursor: pointer;
-    display: inline-block;
+    clear: both;
+    color: #21abc7;
+    display: block;
     text-align: center;
-    white-space: nowrap;
-    font-size: 0.8rem;
-    line-height: 3;
-    padding: 0 2.5em;
-    color: #FFFFFF;
-    background-color: #21abc7;
+    width: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto 5em;
+    padding: 0.8em 1.5em;
+    background-color: transparent;
     border: 1px solid #1C91A8;
     border-radius: 100px;
-    font-family: "Open sans", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    transition: 0.2s ease-in-out; }
+    -webkit-transition: 0.2s ease-in-out; }
     section.work a:hover {
-      background-color: #1C91A8; }
-  section.work span {
-    font-size: 1.5rem; }
-  section.work article {
+      background-color: #1C91A8;
+      color: #FFFFFF; }
+
+/* cv codeschool
+  *
+  * /sass/components/_me.scss - Identity section specific styles
+  * by leny@flatLand!
+  * by Lugash!
+  * created at 23/02/2016
+  */
+section.skills {
+  background-color: #F6F8F8;
+  font-size: 1.6rem;
+  position: relative;
+  float: left;
+  clear: both; }
+  section.skills > h2 {
+    text-align: center;
+    margin: 1em;
+    font-weight: lighter; }
+  section.skills article {
+    float: left;
+    margin: 1em;
+    padding: 1em;
+    width: 20%; }
+  section.skills p {
+    font-size: 1.5rem;
+    font-weight: lighter; }
+  section.skills a {
+    clear: both;
+    color: #21abc7;
     display: block;
-    float: left; }
+    text-align: center;
+    width: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto 5em;
+    padding: 0.8em 1.5em;
+    background-color: transparent;
+    border: 1px solid #1C91A8;
+    border-radius: 100px;
+    -webkit-transition: 0.2s ease-in-out; }
+    section.skills a:hover {
+      background-color: #1C91A8;
+      color: #FFFFFF; }
 
 /* cv codeschool
  *
@@ -287,9 +429,10 @@ section.work {
  * created at 23/02/2016
  */
 section.language {
-  margin: 0 auto; }
+  margin: 0 auto;
+  clear: both; }
   section.language article {
-    margin: 2rem auto 0;
+    margin: 0 auto;
     margin-left: -3px;
     padding-top: 10em;
     padding-bottom: 8em;
@@ -346,7 +489,6 @@ footer {
   footer ul {
     list-style: none;
     padding: 4rem 0;
-    font-size: 0;
     display: inline-block; }
     footer ul li {
       width: 25%;
@@ -368,5 +510,9 @@ footer {
       left: 0;
       top: 0;
       content: url(../img/fav.ico); }
+  footer a {
+    color: #748e95; }
+    footer a:hover {
+      color: #FFFFFF; }
 
 /*# sourceMappingURL=styles.css.map */
