@@ -22,6 +22,13 @@
          margin: 1em;
          padding: 1em;
          width: 20%;
+         position: relative;
+         h1 {
+             &::after {
+                position: absolute;
+                content: "!";
+             }
+         }
      }
      p {
          font-size: 1.5rem;

@@ -22,6 +22,7 @@ section.work {
         padding: 2em;
         width: 50%;
         clear: both;
+        font-weight: lighter;
         &:nth-child(2n) {
             float: left;
             padding-right: 2em;
@@ -32,7 +33,7 @@ section.work {
                 position: absolute;
                 top: 20px;
                 right: -45px;
-                content: url('../img/1.svg');
+                content: url('../img/2.svg');
                 border: 5px solid white;
                 border-radius: 100%;
 
@@ -67,7 +68,7 @@ section.work {
         color: $textColor;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: lighter;
     }
     a {
