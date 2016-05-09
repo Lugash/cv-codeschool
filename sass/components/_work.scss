@@ -33,7 +33,7 @@ section.work {
                 position: absolute;
                 top: 20px;
                 right: -45px;
-                content: url('../img/2.svg');
+                content: url('../img/work2.svg');
                 border: 5px solid white;
                 border-radius: 100%;
 
@@ -50,7 +50,7 @@ section.work {
                 position: absolute;
                 top: 20px;
                 left: -45px;
-                content: url('../img/1.svg');
+                content: url('../img/work1.svg');
                 border: 5px solid white;
                 border-radius: 100%;
 
@@ -90,4 +90,8 @@ section.work {
            color: $backgroundColor;
        }
     }
+}
+
+.new {
+    font-weight: bold;
 }
