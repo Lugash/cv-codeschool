@@ -2,7 +2,7 @@
  *
  * /scripts/scripts.js - main js scripts
  * by Lugash!
- * created at 23/02/2016
+ * created at 02/2016
  */
 
 ( function() {

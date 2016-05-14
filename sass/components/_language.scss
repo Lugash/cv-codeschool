@@ -3,7 +3,7 @@
  * /sass/components/_language.scss - Language section specific styles
  *
  * by Lugash!
- * created at 23/02/2016
+ * created at 02/2016
  */
 
 section.language {
@@ -13,9 +13,10 @@ section.language {
         margin: 0 auto ;
         margin-left: -3px;
         padding-top: 10em;
-        padding-bottom: 8em;
         text-align: center;
         width: 25%;
+        min-height: 350px;
+        vertical-align: top;
         display: inline-block;
         &.french, &.english {
             // background-color: $gradientColor2;
@@ -24,7 +25,7 @@ section.language {
         &.italian, &.dutch {
             background: linear-gradient(to bottom,$gradientColor1, darken($gradientColor1, 15));
         }
-        h1 {
+        h3 {
             margin: 0 auto 4rem;
             font: lighter 4rem $textFont;
             color: $backgroundColor;

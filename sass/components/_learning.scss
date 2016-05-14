@@ -3,7 +3,7 @@
   * /sass/components/_learning.scss - Learning section specific styles
   *
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 
 section.learning {
@@ -13,12 +13,17 @@ section.learning {
     position: relative;
     float: left;
     clear: both;
+    h2 {
+        text-align: center;
+        margin: 1em;
+        font-weight: lighter;
+    }
     article {
         position: relative;
         background-color: $backgroundColor;
 
         float: left;
-        margin: 2em 1%;
+        margin: 2em 1.5%;
         padding: 2em 1em;
         text-align: center;
         width: 30%;
@@ -27,13 +32,23 @@ section.learning {
         box-shadow: 1px 1px 5px $shadow;
         border-radius: $borderRadius;
 
+        h3 {
+            margin: 0 auto 2rem;
+            font: lighter 2rem $textFont;
+            color: $buttonLinkColor;
+
+
+            transform: translateY(-70px);
+            -webkit-transform: translateY(-70px);
+        }
+
         >p {
             font-weight: lighter;
             font-size: 1.7rem;
             transform: translateY(-70px);
             -webkit-transform: translateY(-70px);
         }
-        h2 {
+        h4 {
             position: absolute;
             bottom: 1em;
             left: 2em;
@@ -43,20 +58,8 @@ section.learning {
             border-top: 1px solid rgba($linkColor, 0.5);
         }
     }
-    h1 {
-        margin: 0 auto 2rem;
-        font: lighter 2rem $textFont;
-        color: $buttonLinkColor;
 
 
-        transform: translateY(-70px);
-        -webkit-transform: translateY(-70px);
-    }
-    >h2 {
-        text-align: center;
-        margin: 1em;
-        font-weight: lighter;
-    }
     >p {
         text-align: center;
         padding: 0 2rem;

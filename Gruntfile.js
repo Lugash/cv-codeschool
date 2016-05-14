@@ -2,7 +2,7 @@
  *
  * /Gruntfile.js - Grunt configuration file
  *
- * coded by leny@flatLand!
+ * coded by Lugash!
  * started at 11/02/2016
  */
 

@@ -1,7 +1,7 @@
 /* sass-intro
  *
  * /sass/components/_footer.scss - Footer specific styles
- * by leny@flatLand!
+ * by Lugash!
  * created at 04/02/2016
  */
 
@@ -11,12 +11,11 @@ footer {
 
     padding: 0 5em;
     padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-bottom: 6em;
     h2 {
         display: none;
     }
     ul {
-
         list-style: none;
         padding: 4rem 0;
         display: inline-block;
@@ -31,10 +30,13 @@ footer {
         &+ul {
             border-right: 1px solid darken($footerTextColor, 20);
         }
+        .footer__list {
+            vertical-align: top;
+        }
     }
     p {
+        margin-top: 1em;
         font-size: 1.3rem;
-        text-align: center;
     }
     >a {
         padding: 3em;
@@ -46,7 +48,11 @@ footer {
             top: 0;
             content: url(../img/fav.ico);
         }
-
+    }
+    @media screen and (max-width: 420px) {
+        >a img {
+            width: 80%;
+        }
     }
     a {
         color: darken($footerTextColor, 20);

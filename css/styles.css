@@ -2,30 +2,30 @@
  *
  * /sass/styles.scss - Main stylesheet
  * by Lugash!
- * created at 23/02/2016
+ * created at 02/2016
  */
 /* cv codeschool
   *
   * /sass/settings/_colors.scss - Global color variables
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 /* cv codeschool
   *
   * /sass/settings/_fonts.scss - Global fonts variables
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 /* sass-intro
  *
  * /sass/settings/_size.scss - Global size variables
- * by leny@flatLand!
+ * by Lugash!
  * created at 04/02/2016
  */
 /* sass-intro
  *
  * /sass/generic/_reset.scss - Reset styles
- * by leny@flatLand!
+ * by Lugash!
  * created at 04/02/2016
  */
 * {
@@ -42,7 +42,7 @@ html {
   *
   * sass/base/_elements.scss - Styles base elements
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 html {
   background: #FFFFFF;
@@ -65,7 +65,7 @@ a {
   *
   * /sass/objects/_structure.scss - Structure elements
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 main {
   width: 100%;
@@ -97,14 +97,22 @@ footer:before {
   *
   * /sass/components/_header.scss - Header specific styles
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 header {
-  position: relative;
+  height: 5em;
+  margin-right: 2em;
   background: #FFFFFF; }
+  header nav ul {
+    float: right;
+    margin-top: 1em; }
+    header nav ul li {
+      display: inline-block; }
   header img {
     width: 150px;
-    padding-left: 10%; }
+    margin-left: 2.5em;
+    margin-top: .2em;
+    padding-left: 5%; }
   header a {
     font: normal 1.7rem "Open sans", Helvetica, Arial, sans-serif;
     color: #aebdc1;
@@ -113,8 +121,8 @@ header {
     position: relative; }
     header a.logo::before {
       position: absolute;
-      left: -15px;
-      top: 5px;
+      left: 15px;
+      top: 8px;
       content: url(../img/fav.ico); }
   header #account {
     cursor: pointer;
@@ -131,25 +139,20 @@ header {
     header #account:hover {
       background-color: #388745;
       color: #FFFFFF; }
-  header nav ul li {
-    display: inline-block; }
-    header nav ul li:nth-child(4) {
-      margin-right: 10em; }
-  header input {
-    font: "Open sans", Helvetica, Arial, sans-serif;
-    padding: 0.5em;
-    border-radius: 40px; }
 
 /* cv codeschool
   *
   * /sass/components/_video.scss - Identity section specific styles
-  * by leny@flatLand!
   * by Lugash!
-  * created at 23/02/2016
+  * by Lugash!
+  * created at 02/2016
   */
 section.video {
   position: relative;
-  padding-bottom: 27%; }
+  padding-bottom: 27%;
+  background: url("../img/bcg2.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.8; }
   section.video img {
     position: absolute;
     bottom: 0;
@@ -159,7 +162,7 @@ section.video {
     height: auto;
     z-index: 5;
     opacity: 0.8; }
-  section.video h2, section.video h3, section.video a {
+  section.video h3, section.video a {
     font-weight: lighter;
     font-size: 4em;
     position: relative;
@@ -169,7 +172,7 @@ section.video {
     padding: 1em;
     color: #FFFFFF;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-  section.video h3 {
+  section.video h3 + h3 {
     font-size: 1.8em;
     padding: 0;
     margin-top: 0;
@@ -194,9 +197,9 @@ section.video {
 /* cv codeschool
   *
   * /sass/components/_me.scss - Identity section specific styles
-  * by leny@flatLand!
   * by Lugash!
-  * created at 23/02/2016
+  * by Lugash!
+  * created at 02/2016
   */
 section.me {
   margin: 0 auto;
@@ -227,7 +230,7 @@ section.me {
   * /sass/components/_learning.scss - Learning section specific styles
   *
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 section.learning {
   background-color: #F6F8F8;
@@ -236,11 +239,15 @@ section.learning {
   position: relative;
   float: left;
   clear: both; }
+  section.learning h2 {
+    text-align: center;
+    margin: 1em;
+    font-weight: lighter; }
   section.learning article {
     position: relative;
     background-color: #FFFFFF;
     float: left;
-    margin: 2em 1%;
+    margin: 2em 1.5%;
     padding: 2em 1em;
     text-align: center;
     width: 30%;
@@ -248,28 +255,24 @@ section.learning {
     height: 22em;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px; }
+    section.learning article h3 {
+      margin: 0 auto 2rem;
+      font: lighter 2rem "Open sans", Helvetica, Arial, sans-serif;
+      color: #21abc7;
+      transform: translateY(-70px);
+      -webkit-transform: translateY(-70px); }
     section.learning article > p {
       font-weight: lighter;
       font-size: 1.7rem;
       transform: translateY(-70px);
       -webkit-transform: translateY(-70px); }
-    section.learning article h2 {
+    section.learning article h4 {
       position: absolute;
       bottom: 1em;
       left: 2em;
       font: normal 1.7rem "Open sans", Helvetica, Arial, sans-serif;
       color: #21abc7;
       border-top: 1px solid rgba(174, 189, 193, 0.5); }
-  section.learning h1 {
-    margin: 0 auto 2rem;
-    font: lighter 2rem "Open sans", Helvetica, Arial, sans-serif;
-    color: #21abc7;
-    transform: translateY(-70px);
-    -webkit-transform: translateY(-70px); }
-  section.learning > h2 {
-    text-align: center;
-    margin: 1em;
-    font-weight: lighter; }
   section.learning > p {
     text-align: center;
     padding: 0 2rem;
@@ -310,14 +313,14 @@ section.learning {
  * /sass/components/_work.scss - Work section specific styles
  *
  * by Lugash!
- * created at 23/02/2016
+ * created at 02/2016
  */
 section.work {
   background-color: #FFFFFF;
   font-size: 1.6rem;
   position: relative;
   clear: both; }
-  section.work > h2 {
+  section.work h2 {
     text-align: center;
     padding: 2em;
     font-weight: lighter; }
@@ -358,9 +361,9 @@ section.work {
         -webkit-transform: scale(0.4); }
     section.work article:last-child {
       margin-bottom: 1em; }
-  section.work h1 {
-    margin: 0 auto 2rem;
-    font: normal 2rem "Open sans", Helvetica, Arial, sans-serif;
+  section.work h3 {
+    margin: 0 auto 1rem;
+    font: bold 2rem "Open sans", Helvetica, Arial, sans-serif;
     color: #575a5b; }
   section.work p {
     font-size: 1.7rem;
@@ -384,17 +387,18 @@ section.work {
       color: #FFFFFF; }
 
 .new {
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 /* cv codeschool
   *
   * /sass/components/_me.scss - Identity section specific styles
-  * by leny@flatLand!
   * by Lugash!
-  * created at 23/02/2016
+  * created at 02/2016
   */
 section.skills {
   background-color: #F6F8F8;
+  margin: 0 auto;
   font-size: 1.6rem;
   position: relative;
   float: left;
@@ -403,15 +407,17 @@ section.skills {
     text-align: center;
     margin: 1em;
     font-weight: lighter; }
+  section.skills .allSkills {
+    padding: 0 2%; }
   section.skills article {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     margin: 1em;
     padding: 1em;
-    width: 20%;
+    width: 21%;
     position: relative; }
-    section.skills article h1::after {
-      position: absolute;
-      content: "!"; }
+    section.skills article h3 {
+      margin-bottom: .5em; }
   section.skills p {
     font-size: 1.5rem;
     font-weight: lighter; }
@@ -438,7 +444,7 @@ section.skills {
  * /sass/components/_language.scss - Language section specific styles
  *
  * by Lugash!
- * created at 23/02/2016
+ * created at 02/2016
  */
 section.language {
   margin: 0 auto;
@@ -447,15 +453,16 @@ section.language {
     margin: 0 auto;
     margin-left: -3px;
     padding-top: 10em;
-    padding-bottom: 8em;
     text-align: center;
     width: 25%;
+    min-height: 350px;
+    vertical-align: top;
     display: inline-block; }
     section.language article.french, section.language article.english {
       background: linear-gradient(to bottom, #F5882F, #b55609); }
     section.language article.italian, section.language article.dutch {
       background: linear-gradient(to bottom, #24A9C7, #187286); }
-    section.language article h1 {
+    section.language article h3 {
       margin: 0 auto 4rem;
       font: lighter 4rem "Open sans", Helvetica, Arial, sans-serif;
       color: #FFFFFF; }
@@ -487,7 +494,7 @@ section.language {
 /* sass-intro
  *
  * /sass/components/_footer.scss - Footer specific styles
- * by leny@flatLand!
+ * by Lugash!
  * created at 04/02/2016
  */
 footer {
@@ -495,7 +502,7 @@ footer {
   color: #748e95;
   padding: 0 5em;
   padding-top: 1.5em;
-  padding-bottom: 1em; }
+  padding-bottom: 6em; }
   footer h2 {
     display: none; }
   footer ul {
@@ -510,9 +517,11 @@ footer {
         text-decoration: underline; }
     footer ul + ul {
       border-right: 1px solid #748e95; }
+    footer ul .footer__list {
+      vertical-align: top; }
   footer p {
-    font-size: 1.3rem;
-    text-align: center; }
+    margin-top: 1em;
+    font-size: 1.3rem; }
   footer > a {
     padding: 3em;
     margin-left: 1em;
@@ -522,6 +531,9 @@ footer {
       left: 0;
       top: 0;
       content: url(../img/fav.ico); }
+  @media screen and (max-width: 420px) {
+    footer > a img {
+      width: 80%; } }
   footer a {
     color: #748e95; }
     footer a:hover {
