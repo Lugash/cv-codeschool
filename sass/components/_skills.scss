@@ -36,6 +36,17 @@
             //  }
          }
      }
+     @media screen and (max-width: 935px) {
+         article {
+             width: 40%;
+         }
+     }
+     @media screen and (max-width: 400px) {
+         article {
+             width: 30%;
+         }
+     }
+
      p {
          font-size: 1.5rem;
          font-weight: lighter;

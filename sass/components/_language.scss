@@ -31,6 +31,13 @@ section.language {
             color: $backgroundColor;
         }
     }
+    @media screen and (max-width: 750px) {
+        article {
+            width: 50%;
+            
+        }
+    }
+
     a {
        color: $backgroundColor;
        display: block;

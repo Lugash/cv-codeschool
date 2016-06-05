@@ -36,6 +36,11 @@ header {
             content: url(../img/fav.ico);
         }
     }
+    @media screen and (max-width: 500px) {
+        a {
+            margin: 0 .2em;
+        }
+    }
     #account {
         cursor: pointer;
         display: inline-block;
@@ -53,6 +58,10 @@ header {
             color: $backgroundColor;
         }
     }
-
-
+}
+@media screen and (max-width: 700px) {
+    header {
+        height: 10em;
+        margin-right: 0;
+    }
 }

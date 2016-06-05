@@ -58,6 +58,12 @@ section.learning {
             border-top: 1px solid rgba($linkColor, 0.5);
         }
     }
+    @media screen and (max-width: 1000px) {
+    article {
+        width: 100%;
+        margin: 3em 0;
+    }
+}
 
 
     >p {

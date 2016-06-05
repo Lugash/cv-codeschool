@@ -124,6 +124,9 @@ header {
       left: 15px;
       top: 8px;
       content: url(../img/fav.ico); }
+  @media screen and (max-width: 500px) {
+    header a {
+      margin: 0 .2em; } }
   header #account {
     cursor: pointer;
     display: inline-block;
@@ -139,6 +142,11 @@ header {
     header #account:hover {
       background-color: #388745;
       color: #FFFFFF; }
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 10em;
+    margin-right: 0; } }
 
 /* cv codeschool
   *
@@ -220,10 +228,20 @@ section.me {
     border: 10px solid white;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 1000px) {
+    section.me img {
+      position: relative;
+      width: 100%; } }
   section.me p {
     padding: 0 2rem;
     font-size: 1.5rem;
     font-weight: lighter; }
+
+@media screen and (max-width: 1000px) {
+  section.me {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 5em; } }
 
 /* cv codeschool
   *
@@ -273,6 +291,10 @@ section.learning {
       font: normal 1.7rem "Open sans", Helvetica, Arial, sans-serif;
       color: #21abc7;
       border-top: 1px solid rgba(174, 189, 193, 0.5); }
+  @media screen and (max-width: 1000px) {
+    section.learning article {
+      width: 100%;
+      margin: 3em 0; } }
   section.learning > p {
     text-align: center;
     padding: 0 2rem;
@@ -418,6 +440,12 @@ section.skills {
     position: relative; }
     section.skills article h3 {
       margin-bottom: .5em; }
+  @media screen and (max-width: 935px) {
+    section.skills article {
+      width: 40%; } }
+  @media screen and (max-width: 400px) {
+    section.skills article {
+      width: 30%; } }
   section.skills p {
     font-size: 1.5rem;
     font-weight: lighter; }
@@ -466,6 +494,9 @@ section.language {
       margin: 0 auto 4rem;
       font: lighter 4rem "Open sans", Helvetica, Arial, sans-serif;
       color: #FFFFFF; }
+  @media screen and (max-width: 750px) {
+    section.language article {
+      width: 50%; } }
   section.language a {
     color: #FFFFFF;
     display: block;
