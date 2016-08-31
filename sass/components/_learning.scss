@@ -48,9 +48,9 @@ section.learning {
             transform: translateY(-70px);
             -webkit-transform: translateY(-70px);
         }
-        h4 {
+        .year {
             position: absolute;
-            bottom: 1em;
+            bottom: -5rem;
             left: 2em;
 
             font: normal 1.7rem $textFont;
@@ -94,7 +94,7 @@ section.learning {
         font-family: $textFont;
         font-weight: 600;
         transition: 0.2s ease-in-out;
-        &:hover {
+        &:hover, &:focus {
             background-color: $buttonLinkHoverColor;
         }
     }

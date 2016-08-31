@@ -11,13 +11,13 @@ section.language {
     clear: both;
     article {
         margin: 0 auto ;
-        margin-left: -3px;
         padding-top: 10em;
         text-align: center;
         width: 25%;
         min-height: 350px;
         vertical-align: top;
-        display: inline-block;
+        // display: inline-block;
+        float: left;
         &.french, &.english {
             // background-color: $gradientColor2;
             background: linear-gradient(to bottom,$gradientColor2, darken($gradientColor2, 20));
@@ -34,7 +34,7 @@ section.language {
     @media screen and (max-width: 750px) {
         article {
             width: 50%;
-            
+
         }
     }
 
@@ -51,7 +51,7 @@ section.language {
        border: 1px solid $linkColor2Hover;
        border-radius: 100px;
        -webkit-transition: 0.2s ease-in-out;
-       &:hover {
+       &:hover, &:focus {
            background-color: $linkColor2Hover;
        }
      }
@@ -61,7 +61,7 @@ section.language {
             border: 1px solid $backgroundColor;
             border-radius: 100px;
             -webkit-transition: 0.2s ease-in-out;
-            &:hover {
+            &:hover, &:focus {
                 background-color: $buttonLinkHoverColor;
             }
          }

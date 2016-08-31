@@ -46,7 +46,7 @@ html {
   */
 html {
   background: #FFFFFF;
-  font: normal 62.5%/1.25 "Open sans", Helvetica, Arial, sans-serif; }
+  font: normal 62.5%/1.25 "Open Sans", sans-serif; }
 
 body {
   color: #575a5b; }
@@ -55,7 +55,7 @@ a {
   color: #aebdc1;
   text-decoration: none;
   transition: color .25s ease-in-out; }
-  a:hover {
+  a:hover, a:focus {
     color: #167385; }
 
 .hidden {
@@ -114,7 +114,7 @@ header {
     margin-top: .2em;
     padding-left: 5%; }
   header a {
-    font: normal 1.7rem "Open sans", Helvetica, Arial, sans-serif;
+    font: normal 1.7rem "Open Sans", sans-serif;
     color: #aebdc1;
     display: inline-block;
     margin: 0 0.6em;
@@ -139,7 +139,7 @@ header {
     border: 1px solid #388745;
     border-radius: 100px;
     -webkit-transition: 0.2s ease-in-out; }
-    header #account:hover {
+    header #account:hover, header #account:focus {
       background-color: #388745;
       color: #FFFFFF; }
 
@@ -158,7 +158,6 @@ header {
 section.video {
   position: relative;
   padding-bottom: 27%;
-  background: url("../img/bcg2.jpg") no-repeat center center;
   background-size: cover;
   opacity: 0.8; }
   section.video img {
@@ -196,7 +195,7 @@ section.video {
     border: 1px solid #F79F00;
     border-radius: 100px;
     -webkit-transition: 0.2s ease-in-out; }
-    section.video a:hover {
+    section.video a:hover, section.video a:focus {
       background-color: #F79F00; }
   section.video p {
     padding: 0 2rem;
@@ -275,7 +274,7 @@ section.learning {
     border-radius: 5px; }
     section.learning article h3 {
       margin: 0 auto 2rem;
-      font: lighter 2rem "Open sans", Helvetica, Arial, sans-serif;
+      font: lighter 2rem "Open Sans", sans-serif;
       color: #21abc7;
       transform: translateY(-70px);
       -webkit-transform: translateY(-70px); }
@@ -284,11 +283,11 @@ section.learning {
       font-size: 1.7rem;
       transform: translateY(-70px);
       -webkit-transform: translateY(-70px); }
-    section.learning article h4 {
+    section.learning article .year {
       position: absolute;
-      bottom: 1em;
+      bottom: -5rem;
       left: 2em;
-      font: normal 1.7rem "Open sans", Helvetica, Arial, sans-serif;
+      font: normal 1.7rem "Open Sans", sans-serif;
       color: #21abc7;
       border-top: 1px solid rgba(174, 189, 193, 0.5); }
   @media screen and (max-width: 1000px) {
@@ -316,10 +315,10 @@ section.learning {
     background-color: #21abc7;
     border: 1px solid #1C91A8;
     border-radius: 100px;
-    font-family: "Open sans", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     transition: 0.2s ease-in-out; }
-    section.learning a:hover {
+    section.learning a:hover, section.learning a:focus {
       background-color: #1C91A8; }
   section.learning img {
     height: 40%;
@@ -355,7 +354,8 @@ section.work {
     font-weight: lighter; }
     section.work article:nth-child(2n) {
       float: left;
-      padding-right: 2em;
+      text-align: right;
+      padding-right: 3em;
       border-right: 1px solid #575a5b;
       margin-left: 1px; }
       section.work article:nth-child(2n)::before {
@@ -364,13 +364,12 @@ section.work {
         right: -45px;
         content: url("../img/work2.svg");
         border: 5px solid white;
-        border-radius: 100%;
-        transform: scale(0.4);
-        -webkit-transform: scale(0.4); }
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6); }
     section.work article:nth-child(2n+1) {
       float: right;
-      text-align: right;
-      padding-left: 2em;
+      text-align: left;
+      padding-left: 3em;
       border-left: 1px solid #575a5b; }
       section.work article:nth-child(2n+1)::before {
         position: absolute;
@@ -378,14 +377,13 @@ section.work {
         left: -45px;
         content: url("../img/work1.svg");
         border: 5px solid white;
-        border-radius: 100%;
-        transform: scale(0.4);
-        -webkit-transform: scale(0.4); }
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6); }
     section.work article:last-child {
       margin-bottom: 1em; }
   section.work h3 {
     margin: 0 auto 1rem;
-    font: bold 2rem "Open sans", Helvetica, Arial, sans-serif;
+    font: bold 2rem "Open Sans", sans-serif;
     color: #575a5b; }
   section.work p {
     font-size: 1.7rem;
@@ -404,7 +402,7 @@ section.work {
     border: 1px solid #1C91A8;
     border-radius: 100px;
     -webkit-transition: 0.2s ease-in-out; }
-    section.work a:hover {
+    section.work a:hover, section.work a:focus {
       background-color: #1C91A8;
       color: #FFFFFF; }
 
@@ -463,7 +461,7 @@ section.skills {
     border: 1px solid #1C91A8;
     border-radius: 100px;
     -webkit-transition: 0.2s ease-in-out; }
-    section.skills a:hover {
+    section.skills a:hover, section.skills a:focus {
       background-color: #1C91A8;
       color: #FFFFFF; }
 
@@ -479,20 +477,19 @@ section.language {
   clear: both; }
   section.language article {
     margin: 0 auto;
-    margin-left: -3px;
     padding-top: 10em;
     text-align: center;
     width: 25%;
     min-height: 350px;
     vertical-align: top;
-    display: inline-block; }
+    float: left; }
     section.language article.french, section.language article.english {
       background: linear-gradient(to bottom, #F5882F, #b55609); }
     section.language article.italian, section.language article.dutch {
       background: linear-gradient(to bottom, #24A9C7, #187286); }
     section.language article h3 {
       margin: 0 auto 4rem;
-      font: lighter 4rem "Open sans", Helvetica, Arial, sans-serif;
+      font: lighter 4rem "Open Sans", sans-serif;
       color: #FFFFFF; }
   @media screen and (max-width: 750px) {
     section.language article {
@@ -510,14 +507,14 @@ section.language {
     border: 1px solid #F79F00;
     border-radius: 100px;
     -webkit-transition: 0.2s ease-in-out; }
-    section.language a:hover {
+    section.language a:hover, section.language a:focus {
       background-color: #F79F00; }
   section.language article:nth-child(2n+1) a {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 100px;
     -webkit-transition: 0.2s ease-in-out; }
-    section.language article:nth-child(2n+1) a:hover {
+    section.language article:nth-child(2n+1) a:hover, section.language article:nth-child(2n+1) a:focus {
       background-color: #1C91A8; }
   section.language span {
     font-size: 1.5rem; }
@@ -531,15 +528,16 @@ section.language {
 footer {
   background-color: #2D3033;
   color: #748e95;
-  padding: 0 5em;
+  padding: 0 2em;
   padding-top: 1.5em;
   padding-bottom: 6em; }
   footer h2 {
     display: none; }
   footer ul {
     list-style: none;
-    padding: 4rem 0;
-    display: inline-block; }
+    padding: 4rem 2em;
+    display: inline-block;
+    width: 25%; }
     footer ul li {
       width: 25%;
       font-size: 1.4rem;
@@ -548,8 +546,14 @@ footer {
         text-decoration: underline; }
     footer ul + ul {
       border-right: 1px solid #748e95; }
+    @media screen and (max-width: 600px) {
+      footer ul + ul {
+        border-bottom: 1px solid #748e95; } }
     footer ul .footer__list {
       vertical-align: top; }
+  @media screen and (max-width: 600px) {
+    footer ul {
+      width: 100%; } }
   footer p {
     margin-top: 1em;
     font-size: 1.3rem; }
@@ -567,7 +571,7 @@ footer {
       width: 80%; } }
   footer a {
     color: #748e95; }
-    footer a:hover {
+    footer a:hover, footer a:focus {
       color: #FFFFFF; }
 
 /*# sourceMappingURL=styles.css.map */

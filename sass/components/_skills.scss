@@ -65,7 +65,7 @@
         border: 1px solid $buttonLinkHoverColor;
         border-radius: 100px;
         -webkit-transition: 0.2s ease-in-out;
-        &:hover {
+        &:hover, &:focus {
             background-color: $buttonLinkHoverColor;
             color: $backgroundColor;
         }

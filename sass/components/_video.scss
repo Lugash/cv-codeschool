@@ -9,7 +9,7 @@
  section.video {
      position: relative;
      padding-bottom: 27%; // img bacground cover resize, not ok with em
-     background: url('../img/bcg2.jpg') no-repeat center center;
+    //  background: url('../img/bcg2.jpg') no-repeat center center;
      background-size: cover;
      opacity: 0.8;
 
@@ -52,7 +52,7 @@
         border: 1px solid $linkColor2Hover;
         border-radius: 100px;
         -webkit-transition: 0.2s ease-in-out;
-        &:hover {
+        &:hover, &:focus {
             background-color: $linkColor2Hover;
         }
      }

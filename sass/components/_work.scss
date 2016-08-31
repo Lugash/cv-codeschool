@@ -25,7 +25,8 @@ section.work {
         font-weight: lighter;
         &:nth-child(2n) {
             float: left;
-            padding-right: 2em;
+            text-align: right;
+            padding-right: 3em;
             border-right: 1px solid $textColor;
             margin-left: 1px;
             // regler le pixel erreur
@@ -35,16 +36,15 @@ section.work {
                 right: -45px;
                 content: url('../img/work2.svg');
                 border: 5px solid white;
-                border-radius: 100%;
 
-                transform: scale(0.4);
-                -webkit-transform: scale(0.4);
+                transform: scale(.6);
+                -webkit-transform: scale(.6);
             }
         }
         &:nth-child(2n+1) {
             float: right;
-            text-align: right;
-            padding-left: 2em;
+            text-align: left;
+            padding-left: 3em;
             border-left: 1px solid $textColor;
             &::before {
                 position: absolute;
@@ -52,10 +52,9 @@ section.work {
                 left: -45px;
                 content: url('../img/work1.svg');
                 border: 5px solid white;
-                border-radius: 100%;
 
-                transform: scale(0.4);
-                -webkit-transform: scale(0.4);
+                transform: scale(.6);
+                -webkit-transform: scale(.6);
             }
         }
         &:last-child {
@@ -85,7 +84,7 @@ section.work {
        border: 1px solid $buttonLinkHoverColor;
        border-radius: 100px;
        -webkit-transition: 0.2s ease-in-out;
-       &:hover {
+       &:hover, &:focus {
            background-color: $buttonLinkHoverColor;
            color: $backgroundColor;
        }

@@ -86,7 +86,7 @@ module.exports = function( grunt ) {
 
     grunt.registerTask( "work", [
         "build",
-        "analyse",
+        // "analyse",
         "browserSync",
         "watch"
     ] );
